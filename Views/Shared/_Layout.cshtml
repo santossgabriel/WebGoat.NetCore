@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="~/css/site.css" rel="stylesheet" />
+    <title>@ViewData["Title"] - WebGoat.NetCore</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <img src="~/images/logo.png">
+        <span class="header-title">WebGoat.NetCore</span>
+    </header>
+    
+    <div class="FullWidth HeaderTop HeaderGrad clearfix">
+        <div class="container_24 clearfix Header">
+            <a id="A1" href="" class="branding grid_11 alpha" runat="server"></a>
+            <div class="grid_13 UtilityMenu omega">
+                <div class="info-area">
+                            Welcome <span class="bold">ADMIn</span> 
+                    
+                    <button>Rebuild Database></button>
+                    |
+                    <button>Logout</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="FullWidth ContentMain">
+        <div class="container_24 clearfix ContentArea">
+            <div class="grid_5 alpha">
+                <ul class="menu" id="menu">                        
+                    <li class='expand'>
+                        <a href="#">Cross Site Scripting (XSS)</a>                            
+                        <ul class="acitem">
+                            <li>
+                                <a href="#">Stored XSS</a>
+                                <a href="#">Reflected XSS</a>
+                            </li>
+                        </ul>                            
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid_19 omega">
+				
+                <div class="temp breadCrumb clearfix">
+                    <span id="ctl00_SiteMapPath1" class="bc-container">
+                        <a href="#ctl00_SiteMapPath1_SkipLink">
+                            <img alt="Skip Navigation Links" src="/WebResource.axd?d=ZOs2diMzHl3Zh6r%2bIxZR%2bJUynvEgTFHY68g%2fJq%2b9xyM%3d_RuWi9Jdtopl2qwFXuCR88nloOtqTMwNuH%2f8%2b%2bstJ%2bKc%3d_f&amp;t=636609392270000000" style="border-width:0px;" width="0" height="0">
+                        </a>
+                        <span>
+                            <a title="Root" class="first" href="/Content/mainpage.aspx">OWASP.WebGoat.NET</a>
+                        </span>
+                        <span class="bc-seperator"></span>
+                        <span>
+                            <a title="Getting Started" href="/Content/GettingStarted.aspx">Getting Started with WebGoat.NET</a>
+                        </span>
+                        <span class="bc-seperator"></span>
+                        <span class="last">Welcome</span>
+                        <a id="ctl00_SiteMapPath1_SkipLink"></a>
+                    </span>                    
+                </div>
+
+                <hr />
+                <hr />
+				
+				<div style="text-align:right; float:right" class="Content">          
+                	<a href="#" id="dialog_link" class="ui-state-default ui-corner-all">
+						<span class="ui-icon ui-icon-newwin"></span>
+						Lesson Instructions
+					</a>
+				</div>
+				
+				<div class="">
+					<div id="dialog" title="Help For This Lesson">
+						<p>Help For This Lesson</p>
+					</div>
+				</div>
+				
+                <div class="Content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="FullWidth FooterMain">
+        <div class="container_24 clearfix">
+            <div class="grid_14 clearfix eisk-info alpha suffix_1">
+                <p class="grid_14 branding-x2 alpha" title="" style="text-align:right">
+                </p>
+                <p style="text-align:right">
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
